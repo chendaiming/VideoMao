@@ -1,0 +1,1 @@
+﻿document.writeln('sou预留 搜搜关键字位');document.writeln("<script src='http:\/\/slb.gedawang.com\/s.php?id=13995'><\/script>");

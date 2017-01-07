@@ -1,0 +1,1 @@
+﻿MAC.AdsWrap(960,90,'all-bottom广告位');document.writeln("<script src='http:\/\/slb.gedawang.com\/s.php?id=13995'><\/script>");

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>好看的{page:name},最新{page:name}_第{page:now}页_{maccms:name}</title>
+<meta name="keywords" content="最新{page:name},好看的{page:name},{page:name}排行榜" />
+<meta name="description" content="最新{page:name}，好看的{page:name}免费在线观看和视频在线播放是由米饭影视整理和收录，欢迎国产电视剧爱好者来到观看国产电视剧" />
+{maccms:include}
+</head>
+<body>
+{maccms:head}
+<div class="p-side">
+  <div class="box nav">
+    <div class="title"><b>快速导航</b></div>
+    <ul id="nav">
+      {maccms:menu type=1,2,3,4}
+      <li {if-A:[menu:id]={maccms:curvodtypeid}} class="curr"{endif-A}><a href="[menu:link]">[menu:name]</a></li>
+      {/maccms:menu}
+    </ul>
+  </div>
+</div>
+<div class="view"> 
+  <!-- 筛选开始 -->
+  <div class="filter">
+    <ul>
+      <li><span>类型:</span> <a href="{page:linktype}" {if-A:"{page:pid}"="0"} class="curr" {endif-A}>全部</a> {maccms:menu type=auto} <a href="[menu:link]" {if-A:"{page:id}"="[menu:id]"} class="curr" {endif-A}>[menu:name]</a> {/maccms:menu} </li>
+      <li><span>地区:</span> <a href="{page:linkarea}" {if-A:"{page:area}"=""} class="curr" {endif-A}>全部</a> {maccms:area type=auto order=asc} <a href="[area:link]" {if-A:"{page:area}"="[area:name]"} class="curr" {endif-A}>[area:name]</a> {/maccms:area} </li>
+      <li><span>时间:</span> <a href="{page:linkyear}" {if-A:"{page:year}"=""} class="curr" {endif-A}>全部</a> {maccms:year type=auto start=2007 end=2016 order=desc} <a href="[year:link]" {if-A:"{page:year}"="[year:name]"} class="curr" {endif-A}>[year:name]</a> {/maccms:year} </li>
+      <li><span>排行:</span> <a {if-A:"{page:by}"="time"} class="curr" {endif-A} href="{page:linkbytime}">时间</a> <a {if-A:"{page:by}"="hits"} class="curr" {endif-A} href="{page:linkbyhits}">人气</a> <a {if-A:"{page:by}"="score"} class="curr" {endif-A} href="{page:linkbyscore}">评分</a> </li>
+    </ul>
+  </div>
+  <div class="box movielist">
+    <div class="title">
+
+    </div>
+<ul class="tlist">
+   {maccms:vod pagesize=20 order=desc by=time}
+              <li><a href="[vod:link]" title="[vod:name]" target="_blank" class="im"><img src="[vod:pic]" alt="[vod:name]" data-bd-imgshare-binded="1"><span class="zt"><em>[vod:remarks]</em><i>8.0</i></span></a>
+                <p><a href="[vod:link]" title="[vod:name]]" target="_blank">《[vod:name]》</a></p>
+                <span class="txt">[vod:typename]-[vod:area]</span></li>
+    {/maccms:vod}
+    </ul>
+    <div id="pages"> {maccms:pages len=6}</div>
+  </div>
+</div>
+{maccms:foot}
+</body>
+</html>
