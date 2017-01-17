@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page:key}_{maccms:name}</title>
+{maccms:include}
+</head>
+<body>
+{maccms:load head_news.html}
+<div class="wrap">
+  <div class="content_zleft">
+	<div class="layout_left">
+	  <H2><SPAN></SPAN>最新资讯</H2>
+	  <ul>
+		{maccms:art num=26 order=desc by=time type=all}
+		<li><span><font color="red">[art:time style=mm-dd]</font></span>
+		  <div class="title"><a href="[art:link]" title="[art:name]">[art:colortitle len=15]</a></div>
+		</li>
+		{/maccms:art}
+	  </ul>
+	</div>
+	</div>
+	<div class="layout_newlist">
+	<div class="tit">
+		   <H4>搜索新闻 {page:key} 共 {page:count} 条</H4></div>
+		  <div class="newslist">
+			<ul>
+			  {maccms:art page=true num=10 order=desc}
+			  <li><a href="[pagelist:link]" class="newimg"><img src="[pagelist:remarks]"></a>
+			  <a href="[pagelist:link]" class="titl">[pagelist:colorname] <font color="red">[pagelist:note]</font></a>
+			  <span>日期：[pagelist:time style=mm-dd] 点击：[pagelist:hits] 好评：[pagelist:good] </span>
+			  <p>[pagelist:des len=100]</p>
+			  </li>
+			  {/maccms:art}
+			</ul>
+			<div class="page"> <a href="{maccms:pagefirst}">首页</a><a href="{maccms:pagepre}">上一页</a>{maccms:pagenum len=8}<a href="{maccms:pagenext}">下一页</a><a href="{maccms:pagelast}">尾页</a>{maccms:pagenow}/{maccms:pagecount}页 {maccms:pagesize}条/每页 {maccms:pageselect} </div>
+		  </div>
+	</div>
+</div>
+{maccms:foot}
+</body>
+</html>

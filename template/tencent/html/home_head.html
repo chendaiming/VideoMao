@@ -1,0 +1,71 @@
+<div class="site_head">
+  <div class="head_inner">
+    <h1 class="site_logo"> <a href="http://{maccms:url}" title="{maccms:name}" class="link_logo"><strong class="hidden">{maccms:name}</strong></a></h1>
+    <div class="mod_ad_head"> <a href="#" target="_blank" title="逗逗比影院"><img src="http://bxu2359230665.my3w.com/template/tencent/images/logo.png" alt="逗逗比影院"></a></div>
+    <div class="mod_search">
+      <form class="search_form" action="{maccms:link_search_vod}" method="post">
+        <div class="search_inner"> <i class="ico_search"></i>
+          <input type="text" class="search_ipt" id="wd" name="wd" onBlur="if(this.value==''){this.value='提醒您请输入您要搜索的关键字';this.style.color='#aaa'};" onFocus="if(this.value=='提醒您请输入您要搜索的关键字'){this.value='';this.style.color='#aaa'};" value="提醒您请输入您要搜索的关键字" style="color: rgb(170, 170, 170);" />
+          <button type="submit" class="search_btn"><span class="hidden">搜索</span></button>
+        </div>
+      </form>
+    </div>
+    <div class="mod_quick">
+      <div class="quick_item"> <a class="quick_history" href="#" id="history"> <i class="ico_history_26"></i> <span class="quick_txt">看过</span> <i class="divide"></i> </a> </div>
+      <div class="quick_item"> <a class="quick_attention" href="javascript:MAC.Fav(MAC.Url,MAC.Title)"> <i class="ico_collect_26"></i> <span class="quick_txt">关注</span> <i class="divide"></i> </a> </div>
+      <div class="quick_item"> <a class="quick_attention" href="#"> <i class="ico_upload_26"></i> <span class="quick_txt">上传</span> <i class="divide"></i> </a> </div>
+      <div class="quick_item"> <a class="quick_attention" href="javascript:void(0)" id="login"><img src="http://imgcache.qq.com/tencentvideo_v1/vstyle/web/v3/style/images/default_avatar.png" /></a> </div>
+    </div>
+  </div>
+  <div class="site_navigation">
+    <div class="navigation_main">
+      <div class="navigation_top"></div>
+      <div class="navigation_inner">
+        <ul class="navigation_area">
+          {maccms:matrix table=vod type=1,2,3,4}
+          <li class="list_item"> <a href="[matrix:link]" class="link_nav"><span class="link_inner">[matrix:name]</span><i class="nav_sign"></i></a>
+            <div class="navigation_sub">
+              <ul>
+                {maccms:vod num=13 type=[matrix:id] start=1 order=desc by=time}
+                <li><a href="[vod:link]" class="link_nav_sub"><span class="link_inner">[vod:name]</span></a></li>
+                {/maccms:vod}
+              </ul>
+            </div>
+          </li>
+          {/maccms:matrix}
+        </ul>
+        <ul class="navigation_area">
+          {maccms:matrix table=vod type=child parent=2 order=asc table=vod}
+          <li class="list_item"> <a href="[matrix:link]" class="link_nav"><span class="link_inner">[matrix:name]</span><i class="nav_sign"></i></a>
+            <div class="navigation_sub">
+              <ul>
+                {maccms:vod num=13 type=[matrix:id] start=1 order=desc by=time}
+                <li><a href="[vod:link]" class="link_nav_sub"><span class="link_inner">[vod:name]</span></a></li>
+                {/maccms:vod}
+              </ul>
+            </div>
+          </li>
+          {/maccms:matrix}
+        </ul>
+        <ul class="navigation_area">
+          {maccms:matrix table=vod type=child parent=1 order=asc table=vod}
+          <li class="list_item"> <a href="[matrix:link]" class="link_nav"><span class="link_inner">[matrix:name]</span><i class="nav_sign"></i></a>
+            <div class="navigation_sub">
+              <ul>
+                {maccms:vod num=13 type=[matrix:id] start=1 order=desc by=time}
+                <li><a href="[vod:link]" class="link_nav_sub"><span class="link_inner">[vod:name]</span></a></li>
+                {/maccms:vod}
+              </ul>
+            </div>
+          </li>
+          {/maccms:matrix}
+        </ul>
+        <ul class="navigation_none">
+          <li class="list_item"><a href="{maccms:getlink tv.html}" class="link_nav"><span class="link_inner">电视直播</span></a></li>
+          <li class="list_item"><a href="{maccms:link_gbook}" class="link_nav"><span class="link_inner">留言本</span></a></li>
+          <li class="list_item"><a href="http://{maccms:url}/index.php?m=vod-search-pg-1-wd--year-2014-by-time-order-desc.html" class="link_nav"><span class="link_inner">今日更新</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

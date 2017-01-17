@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE,chrome=1" />
+<title>{page:key}-{maccms:name}</title>
+<meta name="keywords" content="{page:key},{maccms:name}" />
+<meta name="description" content="{page:key},{maccms:name}" />
+{maccms:include}
+<link href="{maccms:path_tpl}css/v280_search.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{maccms:head}
+<div class="mod_search_filter" style="padding-top: 125px;">
+    	<ul>
+        	<li class="list_item">
+				<label>分类</label>
+				<ul class="mod_filter_list" id="coxTabId">
+					<dd {if-A:"{page:typepid}"="0"}class="current" {endif-A}><a href="{page:linktype}">全部</a></dd>
+{maccms:menu type=auto}
+					<dd{if-A:"{page:typeid}"="[menu:id]"} class="current" {endif-A}><a href="[menu:link]">[menu:name]</a></dd>
+{/maccms:menu}
+               </ul>
+			</li>
+        	<li class="list_item">
+				<label>年代</label>
+				<ul class="mod_filter_list" id="coxTabId">
+					<dd {if-A:"{page:year}"=""} class="current" {endif-A}><a href="{page:linkyear}">全部</a></dd>
+{maccms:year type=auto start=2000 end=2014 order=desc}
+					<dd {if-A:"{page:year}"="[year:name]"} class="current" {endif-A}><a href="[year:link]">[year:name]</a></dd>
+{/maccms:year}
+               </ul>
+			</li>
+        	<li class="list_item">
+				<label>地区</label>
+				<ul class="mod_filter_list" id="coxTabId">
+					<dd{if-A:"{page:area}"=""} class="current" {endif-A}><a href="{page:linkarea}">全部</a></dd>
+{maccms:area type=auto}
+					<dd{if-A:"{page:area}"="[area:name]"} class="current" {endif-A}><a href="[area:link]">[area:name]</a></dd>
+{/maccms:area}
+               </ul>
+			</li>
+        	<li class="list_item">
+				<label>语言</label>
+				<ul class="mod_filter_list" id="coxTabId">
+					<dd{if-A:"{page:lang}"=""} class="current" {endif-A}><a href="{page:linklang}">全部</a></dd>
+{maccms:lang type=auto}
+					<dd{if-A:"{page:lang}"="[lang:name]"} class="current" {endif-A}><a href="[lang:link]">[lang:name]</a></dd>
+{/maccms:lang}
+               </ul>
+			</li>
+        </ul>
+    </div>
+    <div class="mod_list">
+    	<ul>
+{maccms:vod pagesize=30 order=desc by=time}
+        	<li>
+				<a title="[vod:name]" target="_blank" class="mod_poster_140" href="[vod:link]">
+					<img class="lazy" data-original="[vod:pic]" src="{maccms:path}images/blank.png" />
+					<span class="figure_mask"><em class="mask_txt">[vod:remarks]</em></span>
+				</a>
+				<h6>
+					<a title="[vod:name]" target="_blank" href="[vod:link]">[vod:name]</a>
+				</h6>
+				<p>主演：[vod:starringlink]</p>
+				<p>发布：[vod:time style=y-m-d]</p>
+				<p>播放：[vod:hits]</p>
+			</li>
+{/maccms:vod}
+        </ul>
+    </div>
+    <div class="page" id="pager">
+            {maccms:pages len=10}
+    </div>
+{maccms:foot}
+</body>
+</html>

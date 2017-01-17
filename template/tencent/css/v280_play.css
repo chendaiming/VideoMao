@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, select, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ margin:0px; padding:0px;font: 12px/1.5 hiragino sans gb,microsoft yahei,simsun;}
+img{display: inline-block;vertical-align: bottom; border: 0 none;}
+ul, ol {list-style: none;}
+li{vertical-align: top;}
+a{color: #2A2A2A;text-decoration: none;}
+a:hover{color: #FF7800;}
+a:visited, a[tabindex="-1"]:focus {outline: 0 none;}
+
+.player{width:1240px;margin:0 auto; background-color:#000; text-align:center;height:515px;}
+.player .ads{float:left; width:135px;height:515px; overflow:hidden; background-color:#CCC;}
+.player .play{ float:left; width:970px;margin:0px;}
+.video-path{width:970px;margin:0 auto;position:relative; height:60px;}
+.video-path .video-name{margin-top: 16px;float: left;width: 500px;height: 22px;line-height: 30px;overflow: hidden;}
+.video-name h1{float: left;overflow: hidden;font-family: "微软雅黑";font-size: 16px;text-shadow: 1px 1px 0 #CCC;color:#000;font-weight: normal;margin-right: 8px;}
+.video-path .ui_tab_slide{float: right;margin-top: 16px;color: white;width: 400px;height: 22px;}
+.ui_tab_slide li{float: left;display: inline-block;zoom: 1;margin-right: 18px;height: 44px;position: relative;}
+
+.showbox{background: #fff;border: solid #d2d2d2 1px;overflow: hidden;width: 1240px;margin: 0 auto;}
+.box_tt_tab{padding: 0;overflow: visible;_overflow: hidden;background: #f2f2f2;height: 30px;line-height: 28px;border-bottom: solid #dedede 1px;}
+.box_tt_tab h2{line-height: 28px;float: left;font-size: 14px;color:#545454;height: 30px;padding: 0 15px;font-weight: normal;border-right: solid #d2d2d2 1px;cursor: pointer;background: url(../images/play_ico.png) no-repeat -100px 0px #f2f2f2;}
+.box_tt_tab .on{position: relative;border-bottom: solid #fff 1px;font-weight: bold;color: #F60;cursor: default;background: url(../images/play_ico.png) no-repeat -100px 0px #fff;}
+.box_tt_tab span{background: #666;color: white;padding: 1px 3px;border-radius: 2px;font: 700 10px/12px Arial;margin-left: 5px;}
+.box_tt_tab em{float: right;line-height: 28px;padding-right: 10px;}
+
+.box_tt_tab #nav_qvod {padding-left:28px;background-position: 8px -194px;}
+.box_tt_tab #nav_baidu {padding-left:28px;background-position: 8px -268px;}
+.box_tt_tab #nav_youku {padding-left:28px;background-position: 8px -18px;}
+.box_tt_tab #nav_tudou {padding-left:28px;background-position: 8px 7px;}
+.box_tt_tab #nav_qiyi {padding-left:28px;background-position: 8px -168px;}
+.box_tt_tab #nav_pvod {padding-left:28px;background-position: 8px -340px;}
+.box_tt_tab #nav_baofeng {padding-left:28px;background-position: 8px -364px;}
+.box_tt_tab #nav_sinahd {padding-left:28px;background-position: 8px -144px;}
+.box_tt_tab #nav_sohu {padding-left:28px;background-position: 8px -68px;}
+.box_tt_tab #nav_ku6 {padding-left:28px;background-position: 8px -94px;}
+.box_tt_tab #nav_qq {padding-left:28px;background-position: 8px -245px;}
+.box_tt_tab #nav_web9 {padding-left:28px;background-position: 8px -388px;}
+.box_tt_tab #nav_pipi {padding-left:28px;background-position: 8px -294px;}
+.box_tt_tab #nav_gvod {padding-left:28px;background-position: 8px -436px;}
+.box_tt_tab #nav_down {padding-left:28px;background-position: 8px -412px;}
+.box_tt_tab #nav_swf {padding-left:28px;background-position: 8px -43px;}
+.box_tt_tab #nav_flv {padding-left:28px;background-position: 8px -460px;}
+.box_tt_tab #nav_pptv,.box_tt_tab #nav_pplive {padding-left:28px;background-position: 8px -118px;}
+.box_tt_tab #nav_letv {padding-left:28px;background-position: 8px -316px;}
+
+.box_con{padding-bottom: 10px;overflow: hidden;zoom: 1;}
+.playtips{width: auto;_width: 98%;display: block;height: 42px;padding: 0 5px;line-height: 42px;border-bottom: dotted #ddd 1px;overflow: hidden;zoom: 1;}
+.playtips p{float: left;font-size: 13px;color: #444;padding-left: 8px;display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px; padding:0px; margin:0px; line-height:42px;}
+.playtips .option_tip{float: right;margin-top: 10px;display: inline;height: 21px;line-height: 21px;text-indent: 10px;border: solid #e3e3e3 1px;cursor: pointer;}
+.option_tip a{color: #f33; padding-right:10px;}
+
+.showplayul{padding: 5px 0 10px 12px;display: block;overflow: hidden;}
+.showplayul li{height: 26px;margin: 10px 10px 0 0;line-height: 26px;overflow: hidden;float: left;min-width: 98px;}
+.showplayul li .selected, .showplayul li .selected:hover{background: #f70;border-color: #E56000;color: #fff;}
+.showplayul li a{border: 1px solid #ddd;color: #000;display: block;float: left;line-height: 24px;height: 24px;text-align: center;width: 107px;overflow: hidden;}
+
+.ads_showdown{width: 1240px;margin: 0 auto;zoom: 1;display: block;margin-top: 6px; height:90px; overflow:hidden; background-color:#CCC;}
+.like{width: 1240px;margin: 0 auto;}
+.like .l{ float:left; width:900px; border:1px solid #CCC;border-top:0px none;height:auto; margin-bottom:10xp}
+.like .r{ float:right; width:318px;border:1px solid #CCC;border-top:0px none;height:auto;padding: 0 0px 10px 10px; margin-bottom:10px;}
+.like_title{display: block;padding: 8px 0;background: #fff;overflow: hidden;}
+.like_title h3{float: left;display: inline;margin: 0 0 0 20px;font-weight: bold;font-size: 14px;color: #333;}
+.like .l .list{overflow: hidden;background: #fff;zoom: 1;padding-bottom: 5px;}
+.like .l .list li{float: left;width: 94px;height: 180px;padding: 0 0 10px 16px;text-align: center;overflow: hidden;}
+.like .l .list li img{display: block;width: 86px;height: 120px;padding: 1px;background: white;border: 2px #eee solid;}
+.like .l .list li span{display: block;height: 15px;margin-top: 3px;color: #959595;line-height: 15px;overflow: hidden;}
+.like .r h2{font: bold 14px/20px simsun;color: #f60;padding: 10px 0; float:left}
+.like .r span{float:left;padding: 12px 0; margin-left:10px;}
+.like .r ul{ width:310px;overflow:hidden;}
+.like .r ul li{width: 100%;border-bottom: 1px dashed #D9D9D9;height: 28px;line-height: 28px;overflow: hidden;line-height: 30px	9;}
