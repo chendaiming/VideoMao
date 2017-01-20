@@ -1509,7 +1509,7 @@ class AppTpl
                         break;
                     case "picslide":
                     	$val = $mrs["d_picslide"];
-                        if(strpos(",".$val,"http://")<=0){
+                        if(strpos(",".$val,"http://")<=0 && strpos(",".$val,"https://")<=0){
                         	if($GLOBALS['MAC']['upload']['remote']==1){ $val = $GLOBALS['MAC']['upload']['remoteurl'].$val; }else { $val= MAC_PATH.$val; }
                         }
                         break;

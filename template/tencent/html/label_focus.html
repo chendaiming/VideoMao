@@ -1,5 +1,5 @@
 ﻿<div class="site_focus" style="padding-top: 100px;" id="mod_txv_focus">
-{maccms:vod num=20 type=all start=1 order=desc by=time level=1}
+{maccms:vod num=10 type=all start=1 order=desc by=time level=5}
 {if-A:[vod:num] = 1}
     	<div class="focus_inner">
         	<a href="[vod:link]" target="_blank" class="focus_img" style="background-image: url([vod:picslide]); {if-B:not isN("[vod:color]")}background-color:#[vod:color];{endif-B}"></a>
@@ -13,7 +13,7 @@
                             <li style="display: list-item;" title="《[vod:name]》 [vod:subname]" img="[vod:picslide]" num="[vod:num]" color="[vod:color]" href="[vod:link]">
 {endif-A}
                                 <a href="[vod:link]" class="link_thumbnails" target="_blank">
-                                    <img src="[vod:picthumb]"></a>
+                                    <img src="[vod:picslide]"></a>
                             </li>
 {/maccms:vod}
                         </ul>
