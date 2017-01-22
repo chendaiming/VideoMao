@@ -259,7 +259,7 @@ var MAC={
 		'Show': function($id,$limit,$ajaxurl,$jumpurl){
 			try{
 			$("#"+$id).autocomplete($ajaxurl,{
-				width: $("#wd").width() + 44,scrollHeight: 300,minChars: 1,matchSubset: 1,max: $limit,cacheLength: 10,multiple: true,matchContains: true,autoFill: false,dataType: "json",
+				width: $("#wd").width() + 44,scrollHeight: 380,minChars: 1,matchSubset: 1,max: $limit,cacheLength: 10,multiple: true,matchContains: true,autoFill: false,dataType: "json",
 				parse:function(obj) {
 					if(obj.status){
 						var parsed = [];

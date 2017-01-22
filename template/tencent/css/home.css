@@ -14,12 +14,12 @@ a.digg_voddown{background:url('../images/home/digg_vod.gif') no-repeat 0px -24px
 .digg_artdown .dig_bar div{background-position:0 -270px;}
 
 /*搜索下拉*/
-.ac_results {border:1px solid #999999;background-color:white;overflow:hidden;z-index:99999;margin:0;padding:0;text-align:left;border-top:0 none;}
+.ac_results {border:1px solid #cecece;background-color:white;overflow:hidden;z-index:99999;margin:0;padding:0;text-align:left;border-top:0 none;}
 .ac_results ul {width: 100%;list-style-position: outside;list-style: none;padding: 0;margin: 0;}
-.ac_results li {margin: 0px;padding: 2px 5px;cursor: default;display: block;font: menu;font-size: 12px;line-height: 25px;overflow: hidden;}
+.ac_results li {margin: 0px;padding: 2px 5px;cursor: pointer;display: block;font: menu;font-size: 12px;line-height: 25px;overflow: hidden;}
 .ac_loading {background: white right center no-repeat;}
-.ac_odd {background-color: #eee;}
-.ac_over {background-color: rgb(255, 85, 0);color: white;}
+.ac_odd {background-color: #fff;}
+.ac_over {background-color: rgb(255, 169, 33);color: white;}
 
 /*滑动显示*/
 .drop-box {
