@@ -326,6 +326,22 @@ else if($ac=='save')
 		    if(!empty($valarr['d_class'])){
 		    	$valarr['d_class'] = ','.$valarr['d_class'].',';
 		    }
+
+		    //获取幻灯片背景 视频猫 http://www.videomao.com
+            if(!empty($valarr['d_picslide'])){
+                $i=@imagecreatefromjpeg($valarr["d_picslide"]);
+                $rgb = imagecolorat($i,0,0);
+                $r=($rgb >>16) & 0xFF;
+                $g=($rgb >>8)& 0xFF;
+                $b=$rgb & 0xFF;
+                $r = dechex($r<0?0:($r>255?255:$r));
+                $g = dechex($g<0?0:($g>255?255:$g));
+                $b = dechex($b<0?0:($b>255?255:$b));
+                $color = (strlen($r) < 2?'0':'').$r;
+                $color .= (strlen($g) < 2?'0':'').$g;
+                $color .= (strlen($b) < 2?'0':'').$b;
+                $valarr['d_color'] = $color;
+            }
 		    
 		    $rc = false;
 		    for ($i=0;$i<$playfromarrlen;$i++){

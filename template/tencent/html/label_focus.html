@@ -2,7 +2,7 @@
 {maccms:vod num=10 type=all start=1 order=desc by=time level=5}
 {if-A:[vod:num] = 1}
     	<div class="focus_inner">
-        	<a href="[vod:link]" target="_blank" class="focus_img" style="background-image: url([vod:picslide]); background-color:[vod:color];"></a>
+        	<a href="[vod:link]" target="_blank" class="focus_img" style="background-image: url([vod:picslide]); background-color:#[vod:color];"></a>
             <div class="focus_control">
             	<h2 class="focus_title" title="《[vod:name]》 [vod:subname]" id="mod_txv_focus_title">《[vod:name]》[vod:subname]</h2>
                 <div class="focus_thumbnails">
@@ -42,7 +42,9 @@
                         imgObj.attr("href",$(liObj).attr('href'));
                         var color = $(liObj).attr('color');
                         if(color){
-                           imgObj.css("background-color",color);
+                           imgObj.css("background-color",'#'+color);
+                        }else{
+                            imgObj.css("background-color",'');
                         }
                         imgObj.animate({ opacity: '1' }, 500);
                     });
