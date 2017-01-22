@@ -16,55 +16,42 @@
     	<div class="container_inner">
         	<!--今日热门 开始-->
         	<div class="wrapper">
-            	<div class="mod_row">
-                	<div class="mod_hd">
-                    	<div class="mod_title">
+                <div class="mod_row">
+                    <div class="mod_hd">
+                        <div class="mod_title">
                             <h2 class="title"><span class="text_sprite text_hot">今日热门</span></h2>
                             <div class="title_sub">
-{maccms:menu type=parent order=asc table=vod}
-                            	<a href="[menu:link]" title="[menu:key]">[menu:name]</a>
+                                {maccms:menu type=parent order=asc table=vod}
+                                <a href="[menu:link]">[menu:name]</a>
                                 <i class="divide">|</i>
-{/maccms:menu}
+                                {/maccms:menu}
                             </div>
                         </div>
                     </div>
                     <div class="mod_bd">
-{maccms:vod num=7 order=desc by=dayhits type=all}
-{if-A:[vod:num] = 1 }
-                    	<div class="left_370">
-                        	<a href="[vod:link]">
-                            	<img src="[vod:pic]" alt="[vod:name]" />
-                                <div class="figure_sign"><i class="ico"></i></div>
-                                <div class="sign">
-                                	<strong class="figure_title">[vod:name]</strong>
-                                    <p class="figure_desc">{if-B:not isN("[vod:subname]")}[vod:subname]{else-B}[vod:remarks]{endif-B}</p>                                
-                                </div>
-                            </a>
-                            <div style="width:370px; height:280px; background-color:#c2c2c2; margin-top:10px;">广告区</div>
-                        </div>
-                        <div class="left_565">
-                        	<ul>
-{else-A}
-                            	<li>
-                                	<a href="[vod:link]" class="figure">
-                                    	<img class="lazy" data-original="[vod:pic]" src="{maccms:path}images/blank.png" alt="[vod:name]" />
+                        <div class="left_565" style=" width:auto;">
+                            <ul style=" width:975px;">
+{maccms:vod num=10 order=desc by=dayhits type=all}
+                                <li>
+                                    <a href="[vod:link]" class="figure">
+                                        <img class="lazy" data-original="[vod:pic]" src="{maccms:path}images/blank.png" alt="[vod:name]" />
                                         <span class="figure_mask"><em class="mask_txt">[vod:remarks]</em></span>
-                                  	</a>
+                                    </a>
                                     <strong class="figure_title"><a href="[vod:link]" title="[vod:name]">[vod:colorname]</a></strong>
                                     <div class="figure_info">
                                     	<span href="##" class="figure_info_play">
                                         	<i class="ico_play"></i>
                                             <span class="info_inner">[vod:hits]</span>
                                       	</span>
-                					</div>
+                                    </div>
                                 </li>
-{endif-A}
 {/maccms:vod}
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
+
             	<div class="mod_box">
                 	<div class="mod_hd">
                         <div class="mod_title">
