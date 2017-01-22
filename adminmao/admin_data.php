@@ -329,7 +329,7 @@ else if($ac=='save')
 
 		    //获取幻灯片背景 视频猫 http://www.videomao.com
             if(!empty($valarr['d_picslide'])){
-                $i=@imagecreatefromjpeg($valarr["d_picslide"]);
+                $i=@imagecreatefromjpeg(''.$valarr["d_picslide"]);
                 $rgb = imagecolorat($i,0,0);
                 $r=($rgb >>16) & 0xFF;
                 $g=($rgb >>8)& 0xFF;

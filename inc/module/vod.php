@@ -98,10 +98,10 @@ elseif($method=='search')
 	
 	//if(empty($tpl->P["wd"]) && empty($tpl->P["ids"]) && empty($tpl->P["pinyin"]) && empty($tpl->P["starring"]) && empty($tpl->P["directed"]) && empty($tpl->P["area"]) && empty($tpl->P["lang"]) && empty($tpl->P["year"]) && empty($tpl->P["letter"]) && empty($tpl->P["tag"]) && empty($tpl->P["type"]) && empty($tpl->P["typeid"]) && empty($tpl->P["classid"]) ){ alert ("搜索参数不正确"); }
 	
-	if ( $tpl->P['pg']==1 && getTimeSpan("last_searchtime") < $MAC['app']['searchtime']){ 
+	/*if ( $tpl->P['pg']==1 && getTimeSpan("last_searchtime") < $MAC['app']['searchtime']){
 		showMsg("请不要频繁操作，时间间隔为".$MAC['app']['searchtime']."秒",MAC_PATH);
 		exit;
-	}
+	}*/
 	
 	
     $tpl->P['cp'] = 'vodsearch';

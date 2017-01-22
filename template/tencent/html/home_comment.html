@@ -5,14 +5,14 @@
 		<input type="hidden" id="c_rid" name="c_rid" value="">
 		<a class="face_wrap fl" href="javascript:;"><img class="face" src="{maccms:path_tpl}images/home/duface.png"></a>
 		<div class="input_wrap fl clearfix">
-				<textarea id="c_content" name="c_content" class="fl"  onKeyup="MAC.Remaining(this,200,'c_remaining')" onfocus="if(this.value=='请在这里发表您的个人看法，最多200个字。'){this.value='';}" onblur="if(this.value==''){this.value='请在这里发表您的个人看法，最多200个字。';};"	>请在这里发表您的个人看法，最多200个字。</textarea>
+				<textarea id="c_content" placeholder="请在这里发表您的个人看法，最多200个字" name="c_content" class="fl"  onKeyup="MAC.Remaining(this,200,'c_remaining')" 	></textarea>
 			<p class="fl clearfix">
 				<img onclick="MAC.AddEm('c_content',1);" src="{maccms:path}images/face/1.gif"><img onclick="MAC.AddEm('c_content',2);" src="{maccms:path}images/face/2.gif"><img onclick="MAC.AddEm('c_content',3);" src="{maccms:path}images/face/3.gif"><img onclick="MAC.AddEm('c_content',4);" src="{maccms:path}images/face/4.gif"><img onclick="MAC.AddEm('c_content',5);" src="{maccms:path}images/face/5.gif"><img onclick="MAC.AddEm('c_content',6);" src="{maccms:path}images/face/6.gif"><img onclick="MAC.AddEm('c_content',7);" src="{maccms:path}images/face/7.gif"><img onclick="MAC.AddEm('c_content',8);" src="{maccms:path}images/face/8.gif"><img onclick="MAC.AddEm('c_content',9);" src="{maccms:path}images/face/9.gif"><img onclick="MAC.AddEm('c_content',10);" src="{maccms:path}images/face/10.gif"><img onclick="MAC.AddEm('c_content',11);" src="{maccms:path}images/face/11.gif"><img onclick="MAC.AddEm('c_content',12);" src="{maccms:path}images/face/12.gif"><img onclick="MAC.AddEm('c_content',13);" src="{maccms:path}images/face/13.gif"><img onclick="MAC.AddEm('c_content',14);" src="{maccms:path}images/face/14.gif"><img onclick="MAC.AddEm('c_content',15);" src="{maccms:path}images/face/15.gif"><img onclick="MAC.AddEm('c_content',16);" src="{maccms:path}images/face/16.gif">
 				<span class="remaining fr" id="c_remaining">200</span>
 			</p>
 		</div>
 		<p class="smt_wrap fl clearfix">
-			<span class="total fl">共<em id="item_count">{page:datacount}</em>条影片评论</span>
+			<span class="total fl">共 <em id="item_count">{page:datacount}</em> 条影片评论</span>
 			<span class="fr clearfix">
 				<span id="c_login" style="display: none;">
 					<span></span>

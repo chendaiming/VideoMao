@@ -12,9 +12,9 @@
 <body>
 	{maccms:head}
 	<div class="player" style="padding-top: 125px;">
-    	<div class="ads"></div>
+    	<!--<div class="ads"></div>-->
         <div class="play">[vod:playerinfo][vod:player]</div>
-        <div class="ads"></div>
+        <!--<div class="ads"></div>-->
     </div>
     <div class="video-path">
     	<span class="video-name"><h1>[vod:name]</h1> [vod:subname]</span>
@@ -45,7 +45,7 @@
 				<div class="option_tip"><a href="javascript:void(0)">温馨提醒您：[play:show]资源点播[[vod:name]][play:tip]</a></div>
 			</div>
         </div>
-        <ul class="showplayul" id="list_[play:from]" rel="symax_player" data="[play:from]" order="desc" limit="[play:num]" style="display:none">
+        <ul class="showplayul" id="list_[play:from]" rel="symax_player" data="[play:from]" order="desc" limit="[play:num]" style="display:block">
 {maccms:url order=desc}
         	<li><a href="[url:link]" title="[url:name]" id="[play:from]_[url:num]">[url:name]</a></li>
 {/maccms:url}
@@ -62,7 +62,7 @@
 		$("#nav_"+playFrom).addClass("on");
 		$("#"+playFrom+"_"+playNum).addClass("selected");
     </script>
-    <div class="ads_showdown"></div>
+    <!--<div class="ads_showdown"></div>-->
     <div class="like">
     	<div class="l">
         	<div class="like_title"><h3>您可能还喜欢的</h3></div>

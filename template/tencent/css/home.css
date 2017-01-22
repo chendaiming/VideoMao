@@ -133,10 +133,11 @@ a.digg_voddown{background:url('../images/home/digg_vod.gif') no-repeat 0px -24px
 	width: 98%;
 }
 .cmt_msg .input_wrap textarea {
-	background: url("../images/home/textareabg.png") repeat-x 0px 0px rgb(255, 255, 255); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(187, 187, 187) rgb(187, 187, 187) currentColor; border-radius: 3px 3px 0px 0px; width: 99%; height: 53px; line-height: 1.4; overflow: auto; padding-top: 8px; padding-left: 1%;
+	background: url("../images/home/textareabg.png") repeat-x 0px 0px rgb(255, 255, 255); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(187, 187, 187) rgb(187, 187, 187) currentColor; border-radius: 3px 3px 0px 0px; width: 99%; height: 53px; line-height: 1.4; overflow: auto; padding: 8px 0px 5px 10px;;
 }
 .cmt_msg .input_wrap p {
-	background: rgb(255, 255, 255); border-width: 1px; border-style: dotted solid solid; border-color: rgb(187, 187, 187); border-radius: 0px 0px 3px 3px; width: 100%; height: 28px; color: rgb(206, 206, 206); line-height: 28px;
+	background: rgb(255, 255, 255); border-width: 1px; border-style: dotted solid solid; border-color: rgb(187, 187, 187); border-radius: 0px 0px 3px 3px; width: 99%; height: 28px; color: rgb(206, 206, 206); line-height: 28px;
+	padding: 5px;
 }
 .cmt_msg .expression {
 	background: url("../images/home/emotion2.png") no-repeat 0px 0px; margin: 6px 0px 0px 6px; width: 18px; height: 16px; display: block; cursor: pointer;

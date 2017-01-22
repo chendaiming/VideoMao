@@ -92,8 +92,8 @@ elseif($method=='search')
 	$tpl->C["siteaid"] = 25;
 	$wd = trim(be("all", "wd")); $wd = chkSql($wd);
 	if(!empty($wd)){ $tpl->P["wd"] = $wd; }
-	
-	if ( $tpl->P['pg']==1 && getTimeSpan("last_arsearchtime") < $MAC['app']['searchtime']){ 
+
+	if ( $tpl->P['pg']==1 && getTimeSpan("last_arsearchtime") < $MAC['app']['searchtime']){
 		showMsg("请不要频繁操作，时间间隔为".$MAC['app']['searchtime']."秒",MAC_PATH);
 		exit;
 	}

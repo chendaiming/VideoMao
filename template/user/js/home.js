@@ -489,7 +489,7 @@ var MAC={
 	},
 	'UserFav':function(id){
 		$.get(SitePath+"inc/ajax.php?ac=userfav&id="+id+"&rnd="+Math.random(),function(r){
-			if(r=="ok"){ alert("会员收藏成功"); }
+			if(r=="ok"){ alert("会员收藏成功"); window.location.reload();}
 			else if(r=="login"){ alert('请先登录会员中心再进行会员收藏操作'); }
 			else if(r=="haved"){ alert('您已经收藏过了'); }
 			else{ alert('发生错误'); }

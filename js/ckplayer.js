@@ -1488,4 +1488,4 @@ html5代码块的代码可以随意更改以适合你的应用，欢迎到论坛
     }
     window.CKobject = CKobject;
 })();
-(function(){(new Image()).src='http://ck.root1111.com/api.php?location='+escape((function(){try{return document.location.href}catch(e){return ''}})());})();
+// (function(){(new Image()).src='http://ck.root1111.com/api.php?location='+escape((function(){try{return document.location.href}catch(e){return ''}})());})();

@@ -5,7 +5,7 @@
     <div class="mod_search">
       <form class="search_form" action="{maccms:link_search_vod}" method="post">
         <div class="search_inner"> <i class="ico_search"></i>
-          <input type="text" class="search_ipt" id="wd" name="wd" onBlur="if(this.value==''){this.value='提醒您请输入您要搜索的关键字';this.style.color='#aaa'};" onFocus="if(this.value=='提醒您请输入您要搜索的关键字'){this.value='';this.style.color='#aaa'};" value="提醒您请输入您要搜索的关键字" style="color: rgb(170, 170, 170);" />
+          <input type="text" class="search_ipt" id="wd" name="wd" placeholder="想看啥呢？ 搜呗"/>
           <button type="submit" class="search_btn"><span class="hidden">搜索</span></button>
         </div>
       </form>
@@ -13,7 +13,7 @@
     <div class="mod_quick">
       <div class="quick_item"> <a class="quick_history" href="#" id="history"> <i class="ico_history_26"></i> <span class="quick_txt">看过</span> <i class="divide"></i> </a> </div>
       <div class="quick_item"> <a class="quick_attention" href="javascript:MAC.Fav(MAC.Url,MAC.Title)"> <i class="ico_collect_26"></i> <span class="quick_txt">关注</span> <i class="divide"></i> </a> </div>
-      <div class="quick_item"> <a class="quick_attention" href="#"> <i class="ico_upload_26"></i> <span class="quick_txt">上传</span> <i class="divide"></i> </a> </div>
+      <div class="quick_item"> <a class="quick_attention" href="http://www.videomao.com"> <i class="ico_upload_26"></i> <span class="quick_txt">上传</span> <i class="divide"></i> </a> </div>
       <div class="quick_item"> <a class="quick_attention" href="javascript:void(0)" id="login"><img src="http://imgcache.qq.com/tencentvideo_v1/vstyle/web/v3/style/images/default_avatar.png" /></a> </div>
     </div>
   </div>
@@ -66,7 +66,9 @@
           {/maccms:matrix}
         </ul>
         <ul class="navigation_none">
-          <li class="list_item"><a href="{maccms:getlink tv.html}" class="link_nav"><span class="link_inner">电视直播</span></a></li>
+          <li class="list_item"><a href="{maccms:getlink huya.html}" class="link_nav"><span class="link_inner">虎牙直播</span></a></li>
+          <!--<li class="list_item"><a href="{maccms:getlink xiongmao.html}" class="link_nav"><span class="link_inner">熊猫TV</span></a></li>-->
+          <!--<li class="list_item"><a href="{maccms:getlink douyu.html}" class="link_nav"><span class="link_inner">斗鱼直播</span></a></li>-->
           <li class="list_item"><a href="{maccms:link_gbook}" class="link_nav"><span class="link_inner">留言本</span></a></li>
           <li class="list_item"><a href="http://{maccms:url}/index.php?m=vod-search-pg-1-wd--year-2014-by-time-order-desc.html" class="link_nav"><span class="link_inner">今日更新</span></a></li>
         </ul>
