@@ -1494,7 +1494,24 @@ class AppTpl
                     case "enname": $val=getTextt($m3, $mrs["d_enname"]);break;
                     case "ennamelink": $val=getKeysLink($mrs["d_enname"], "pinyin");break;
                     case "state": $val=$mrs["d_state"];break;
-                    case "color": $val=$mrs["d_color"];break;
+                    case "color":
+                        if($mrs["d_picslide"]){
+                            $i=@imagecreatefromjpeg($mrs["d_picslide"]);
+                            $rgb = imagecolorat($i,0,0);
+                            $r=($rgb >>16) & 0xFF;
+                            $g=($rgb >>8)& 0xFF;
+                            $b=$rgb & 0xFF;
+                            $r = dechex($r<0?0:($r>255?255:$r));
+                            $g = dechex($g<0?0:($g>255?255:$g));
+                            $b = dechex($b<0?0:($b>255?255:$b));
+                            $color = (strlen($r) < 2?'0':'').$r;
+                            $color .= (strlen($g) < 2?'0':'').$g;
+                            $color .= (strlen($b) < 2?'0':'').$b;
+                            $val= '#'.$color;
+                        }else{
+                            $val=$mrs["d_color"];
+                        }
+                        break;
                     case "pic":
                         $val = $mrs["d_pic"];
                         if(strpos(",".$val,"http://")<=0){

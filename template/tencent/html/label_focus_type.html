@@ -2,15 +2,15 @@
 	<div class="w1240">
 		<div class="tip" id="focusTip">
 			<ul>
-				{maccms:vod num=13 type={maccms:curvodtypeid} start=1 order=desc by=time level=2}
-				<li class="tab[vod:num] navigation"><a href="[vod:link]"><img src="[vod:picthumb]"/></a></li>
+				{maccms:vod num=13 type={maccms:curvodtypeid} start=1 order=desc by=time level=all}
+				<li class="tab[vod:num] navigation"><a href="[vod:link]"><img src="[vod:picslide]"/></a></li>
 				{/maccms:vod}
 			</ul>
 		</div>
 		<div class="list" id="focusList">
 			<ul>
-				{maccms:vod num=13 type={maccms:curvodtypeid} start=1 order=desc by=time level=2}
-				<li><a href="[vod:link]"><img src="[vod:picslide]" /></a></li>
+				{maccms:vod num=13 type={maccms:curvodtypeid} start=1 order=desc by=time level=all}
+				<li><a href="[vod:link]"><img style="width: 100%;height: 100%;" src="[vod:picslide]" /></a></li>
 				{/maccms:vod}
 			</ul>
 		</div>
