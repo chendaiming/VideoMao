@@ -7,7 +7,7 @@ a{color: #2A2A2A;text-decoration: none;}
 a:hover{color: #FF7800;}
 a:visited, a[tabindex="-1"]:focus {outline: 0 none;}
 
-/*½¹µãÍ¼*/
+/*ï¿½ï¿½ï¿½ï¿½Í¼*/
 .type_focus{width: 1240px;margin: 0 auto;}
 .type_focus .w1240{position: relative;left: 0px;top: 0px; width:1240px;overflow: hidden; height:400px;}
 .type_focus .w1240 .list{}
@@ -68,5 +68,16 @@ a:visited, a[tabindex="-1"]:focus {outline: 0 none;}
 .wrapper .r .top_list_ver .top_list{float: left;width: 49.9%;padding: 17px 0 2px;_margin-bottom: 2px;overflow: hidden;zoom: 1;}
 .wrapper .r .top_list_ver .top_list li{float: none;width: 100%;margin-top: -14px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .wrapper .r .top_list li .top_title{display: block;height: 14px;line-height: 14px;margin: 15px;_margin: 13px;cursor: pointer;}
-.wrapper .r .top_list li .top_title .num{margin: 0 4px 0 0;vertical-align: top;background-position: -21px 0;background-color: #FF7800;display: inline-block;zoom: 1;width: 14px;height: 14px;line-height: 100px;text-align: center;color: white;background-image: url(../images/number.svg);background-repeat: no-repeat;overflow: hidden;}
+.wrapper .r .top_list li .top_title .num{margin: 0 4px 0 0;vertical-align: top;background-position: -21px 0;background-color: #FF7800;display: inline-block;zoom: 1;width: 14px;height: 14px;line-height: 100px;text-align: center;color: white;background-image: url(../css/number.svg);background-repeat: no-repeat;overflow: hidden;}
 
+.wrapper .r .top_list li .top_title .num_1{background-position: 0 0px;}
+.wrapper .r .top_list li .top_title .num_2{background-position:-21px 0;}
+.wrapper .r .top_list li .top_title .num_3{background-position:-41px 0;}
+.wrapper .r .top_list li .top_title .num_4{background-position:-60px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_5{background-position:-81px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_6{background-position:-100px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_7{background-position:-121px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_8{background-position:-141px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_9{background-position:-160px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_10{background-position:-181px 0;background-color:#AAA;}
+.wrapper .r .top_list li .top_title .num_11,.num_12,.num_13,.num_14,.num_15,.num_16,.num_17,.num_18,.num_19,.num_20,.num_21{background-position:10px 0;background-color:#AAA;}
