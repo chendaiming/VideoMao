@@ -1,0 +1,43 @@
+/* */
+*{ margin:0; padding:0; list-style:none;}
+@media (min-width: 1024px){
+    #divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+    #playBox{ width:1400px; height:480px; margin:20px auto; background:#333; position:relative; overflow:hidden;}
+    #playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+    #playBox .oUlplay li{ float:left;width: 1400px;}
+    #playBox .oUlplay li a img{ height: 100%; width: 100%;}
+    #playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(../images/l.png) no-repeat; position:absolute; top:190px; left:10px; z-index:10;}
+    #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(../images/r.png) no-repeat; position:absolute; top:190px; right:10px; z-index:10;}
+    #playBox .smalltitle {width:1400px; height:10px; position:absolute; bottom:15px; z-index:10}
+    #playBox .smalltitle ul{ width:120px; margin:0 auto;}
+    #playBox .smalltitle ul li{ width:10px; height:10px; margin:0 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+    #playBox .smalltitle .thistitle{ background:#69aaec;}
+}
+
+@media (min-width: 0px) and (max-width: 639px){
+    #playBox{ width:100%; height:250px; margin:20px auto; background:#333; position:relative; overflow:hidden;}
+    #divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+    #playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+    #playBox .oUlplay li{ float:left;}
+    #playBox .oUlplay li a img{ height: 250px; width: 360px;}
+    #playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(../images/l.png) no-repeat; position:absolute; top:104px; left:10px; z-index:10;}
+    #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(../images/r.png) no-repeat; position:absolute; top:104px; right:10px; z-index:10;}
+    #playBox .smalltitle {width:1000px; height:10px; position:absolute; bottom:15px; z-index:10}
+    #playBox .smalltitle ul{ width:120px; margin:0 auto;}
+    #playBox .smalltitle ul li{ width:10px; height:10px; margin:0 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+    #playBox .smalltitle .thistitle{ background:#69aaec;}
+}
+@media (min-width: 400px) and (max-width: 767px){
+    #playBox{ width:100%; height:250px; margin:20px auto; background:#333; position:relative; overflow:hidden;}
+    #divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+    #playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+    #playBox .oUlplay li{ float:left;}
+    #playBox .oUlplay li a img{ height: 250px; width: 400px;}
+    #playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(../images/l.png) no-repeat; position:absolute; top:104px; left:10px; z-index:10;}
+    #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(../images/r.png) no-repeat; position:absolute; top:104px; right:10px; z-index:10;}
+    #playBox .smalltitle {width:1000px; height:10px; position:absolute; bottom:15px; z-index:10}
+    #playBox .smalltitle ul{ width:120px; margin:0 auto;}
+    #playBox .smalltitle ul li{ width:10px; height:10px; margin:0 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+    #playBox .smalltitle .thistitle{ background:#69aaec;}
+}
+
